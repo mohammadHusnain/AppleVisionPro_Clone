@@ -61,7 +61,7 @@ gsap.to("#page", {
 // Fade out #page-bottom
 gsap.to("#page-bottom", {
     scrollTrigger: {
-        trigger: "#page",
+        trigger: "#page-bottom",
         start: "3% top", // Adjust as needed
         end: "bottom top", // Adjust as needed
         scroller: "#main", // Corrected scroller
@@ -69,3 +69,33 @@ gsap.to("#page-bottom", {
     opacity: 0, // Fade out
 });
 
+var t1 = gsap.timeline({
+
+    scrollTrigger:{
+        trigger:`#page1`,
+        start:`top top`,
+        scrub:1,
+        scroller:`#main`,
+        pin:true
+    }
+})
+
+t1.to("#page1>h1" , {
+    top:`-50%`
+})
+
+
+var t2 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: `#page2`,
+        start: `top top`,
+        scrub: 1,
+        scroller: `#main`,
+        pin: true
+    }
+})
+
+t2.to("#page2>h1", {
+    top: `-50%`
+})
