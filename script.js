@@ -34,3 +34,38 @@ function locomotive(){
 
 locomotive();
 
+// Animation for the video
+gsap.to("#page>video", {
+    scrollTrigger: {
+        trigger: "#page>video",
+        start: "2% top", // Adjust as needed
+        end: "bottom top", // Adjust as needed
+        scroller: "#main", // Corrected scroller
+        onEnter: () => {
+            document.querySelector("#page>video").play(); // Corrected selector
+        },
+    },
+});
+
+// Pin the #page section
+gsap.to("#page", {
+    scrollTrigger: {
+        trigger: "#page",
+        start: "top top", // Adjust as needed
+        end: "bottom top", // Adjust as needed
+        scroller: "#main", // Corrected scroller
+        pin: true, // Pin the #page section
+    },
+});
+
+// Fade out #page-bottom
+gsap.to("#page-bottom", {
+    scrollTrigger: {
+        trigger: "#page",
+        start: "3% top", // Adjust as needed
+        end: "bottom top", // Adjust as needed
+        scroller: "#main", // Corrected scroller
+    },
+    opacity: 0, // Fade out
+});
+
