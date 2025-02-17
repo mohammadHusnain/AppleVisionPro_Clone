@@ -266,14 +266,17 @@ body {
     padding-left: 5vw;
 }
 .right5>h3{
-    font-size: 1.7vw;
+    top: 5%;
+    font-size: 1.5vw;
     width: 90%;
     color: #484848d7;
 }
 .right5>button{
+    height: 60px;
+    width: 350px;
     padding: 10px 20px;
     border: none;
-    background-color: #ff823d;
+    background-color: orangered;
     color: #fff;
     font-weight: 500;
     border-radius: 50px;
@@ -288,6 +291,73 @@ body {
 }
 
 #center-page6 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2.3vw;
+  padding: 10px;
+  margin: 10px;
+}
+
+#page7,#page9,#page11{
+    display: flex;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+}
+.left7,.left9,.left11{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+.left7>h1,.left9>h1,.left11>h1{
+    font-size: 2.5vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    font-weight: 700;
+}
+.right7,.right9,.right11{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding-left: 5vw;
+}
+.right7>h3,.right9>h3,.right11>h3{
+    top: 10px;
+    font-size: 1.5vw;
+    width: 90%;
+    color: #484848d7;
+}
+.right7>button,.right9>button,.right11>button{
+    height: 65px;
+    width: 350px;
+    padding: 10px 20px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 1.3vw;
+    margin-top: 1.5vw;
+}
+
+
+#page8,#page10,#page12{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#center-page8,#center-page10,#center-page12 {
   position: absolute;
   top: 60%;
   left: 50%;

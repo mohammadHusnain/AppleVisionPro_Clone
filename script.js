@@ -100,9 +100,7 @@ t2.to("#page2>h1", {
     top: `-50%`
 })
 
-document.querySelector('.watch-film').addEventListener('click', function () {
-    this.classList.toggle('clicked');
-});
+
 
 var t3 = gsap.timeline({
 
@@ -119,7 +117,7 @@ t3.to("#page4>#center-page4", {
     top: `-50%`
 })
 
-var t3 = gsap.timeline({
+var t4 = gsap.timeline({
 
     scrollTrigger: {
         trigger: `#page6`,
@@ -130,6 +128,56 @@ var t3 = gsap.timeline({
     }
 })
 
-t3.to("#page6>#center-page6", {
+t4.to("#page6>#center-page6", {
+    top: `-50%`
+})
+
+
+t4.to("#page4>#center-page4", {
+    top: `-50%`
+})
+
+var t5 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: `#page8`,
+        start: `top top`,
+        scrub: 1,
+        scroller: `#main`,
+        pin: true
+    }
+})
+
+t5.to("#page8>#center-page8", {
+    top: `-50%`
+})
+
+var t6 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: `#page10`,
+        start: `top top`,
+        scrub: 1,
+        scroller: `#main`,
+        pin: true
+    }
+})
+
+t6.to("#page10>#center-page10", {
+    top: `-50%`
+})
+
+var t7 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: `#page12`,
+        start: `top top`,
+        scrub: 1,
+        scroller: `#main`,
+        pin: true
+    }
+})
+
+t7.to("#page12>#center-page12", {
     top: `-50%`
 })
