@@ -99,3 +99,37 @@ var t2 = gsap.timeline({
 t2.to("#page2>h1", {
     top: `-50%`
 })
+
+document.querySelector('.watch-film').addEventListener('click', function () {
+    this.classList.toggle('clicked');
+});
+
+var t3 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: `#page4`,
+        start: `top top`,
+        scrub: 1,
+        scroller: `#main`,
+        pin: true
+    }
+})
+
+t3.to("#page4>#center-page4", {
+    top: `-50%`
+})
+
+var t3 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: `#page6`,
+        start: `top top`,
+        scrub: 1,
+        scroller: `#main`,
+        pin: true
+    }
+})
+
+t3.to("#page6>#center-page6", {
+    top: `-50%`
+})
