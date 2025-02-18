@@ -420,7 +420,7 @@ function canvas(){
         ease: `none`,
         scrollTrigger: {
             scrub: 0.15,
-            trigger: `#page15`,
+            trigger: `canvas`,
             //   set start end according to preference
             start: `top top`,
             end: `600% top`,
@@ -457,7 +457,7 @@ function canvas(){
     }
     ScrollTrigger.create({
 
-        trigger: "#page15",
+        trigger: "canvas",
         pin: true,
         // markers:true,
         scroller: `#main`,
@@ -468,3 +468,4 @@ function canvas(){
 }
 
 canvas();
+
