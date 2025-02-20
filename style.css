@@ -634,8 +634,8 @@ object-fit: cover;
 }
 
 #page24>button{
-    position: relative;
-    bottom: 10%;
+    position: absolute;
+    bottom: 1%;
     padding: 10px 20px;
     font-size: 1.5vw;
     border-radius: 50px;
@@ -643,4 +643,122 @@ object-fit: cover;
     color: #fff;
     font-weight: 500;
     border: none;
+}
+
+#page25{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0%;
+}
+#page25>canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vw;
+}
+
+#page26{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background-color: #000;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5vw;
+}
+#page26>h5{
+    width: 35%;
+}
+
+#page27{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page27>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page27{
+    position: absolute;
+    height: 20%;
+    width: 32%;
+    bottom: 49%;
+    right: 5%;
+    color: #fff;
+}
+#center-page27>h1{
+    /* margin-bottom: 1.5vw; */
+    top: 0%;
+}
+
+#center-page27>p>span{
+    color: white;
+    font-size: larger;
+}
+
+#center-page27>p{
+color: #86868B;
+    font-size: larger;
+}
+
+#page28{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page28>#troff{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    z-index: 9;
+}
+#page28>#tron{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+}
+#page29{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page29>#snroff{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    z-index: 9;
+}
+#page29>#snron{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+}
+#page30{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page30>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity:0
 }
