@@ -605,7 +605,7 @@ t9.to("#page29>#troff", {
     opacity: 0
 })
 
-var tl4 = gsap.timeline({
+var t9 = gsap.timeline({
     scrollTrigger: {
         trigger: `#page29`,
         start: `top top`,
